@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+  <title>Codex 重置监控 · SmartKey</title>
+  <link rel="stylesheet" href="/monitor.css"><script type="module" src="/monitor.js"></script>
+</head>
+<body>
+  <aside class="sidebar" aria-label="会员导航">
+    <a class="brand" href="https://shop.smartkey.fun/membership.html"><img src="/smartkey-cat-loop.gif" alt="" width="48" height="40"><span>SmartKey<small>会员服务</small></span></a>
+    <div class="nav-caption">探索与资讯</div>
+    <nav><a class="nav-item active" href="/monitor" aria-current="page"><span aria-hidden="true">◷</span>Codex 重置监控</a><a class="nav-item" href="https://shop.smartkey.fun/membership.html#daily"><span aria-hidden="true">▤</span>AI 日报</a></nav>
+    <div class="sidebar-note"><span class="small-label">KEEP CREATING</span><p>每一次重置，<br>都是新的开始。</p><div class="little-orbit" aria-hidden="true"><i></i><b>✳</b></div></div>
+    <a class="back-link" href="https://shop.smartkey.fun/membership.html">← 返回会员中心</a>
+  </aside>
+  <main class="main">
+    <header class="page-header"><div class="today"><span id="today-label">北京时间</span><strong id="today-date">—</strong><span id="today-weekday">—</span></div><div><div class="small-label">CODEX / RESET WATCH</div><h1>Codex 重置监控<span class="title-dot">.</span></h1><p>跟进重置动态，把时间留给创造。</p></div></header>
+    <div id="feed-message" class="feed-message" role="status" hidden></div>
+    <section class="overview" aria-label="重置播报与预计窗口">
+      <div class="broadcast-card"><div class="section-heading"><h2>今日播报</h2></div><iframe title="Codex 额度重置动画播报" src="/?embed=1&amp;source=auto" allow="autoplay" loading="eager"></iframe><div class="broadcast-foot">数据来源为Tibo推文 · 按北京时间当天已确认公告判定 · 个人额度请以 Codex 为准。</div></div>
+      <article class="window-card"><div class="small-label">NEXT WINDOW <span class="window-symbol" aria-hidden="true">↗</span></div><span class="status-pill" id="window-state">读取公开预告</span><h2 id="window-title">正在获取<br>预计窗口</h2><p id="window-description">预计时间来自公开预告，等待数据载入。</p><div class="window-details" id="window-details"></div><div class="window-bottom"><span class="small-label">最近一则动态</span><div id="latest-event">等待载入…</div></div></article>
+    </section>
+    <section class="history" aria-label="重置日历和原帖">
+      <div class="calendar-card"><div class="section-heading"><h2>重置日历</h2><span class="small-label">北京时间</span></div><div class="month-controls"><strong id="month-label">—</strong><div><button id="prev-month" aria-label="上个月">‹</button><button id="current-month">本月</button><button id="next-month" aria-label="下个月">›</button></div></div><div class="weekdays" aria-hidden="true"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div><div class="calendar-grid" id="calendar-grid" aria-label="按日期查看重置记录"></div><div class="calendar-legend"><span><i class="confirmed-dot"></i>已确认</span><span><i class="pending-dot"></i>预告 / 其他</span></div><p class="calendar-note">日期优先采用明确的重置日；否则按确认帖或预告发布日归档。</p><div class="history-summary"><strong id="history-count">—</strong><span>条公开记录可查<span id="history-start"></span></span></div></div>
+      <div class="posts-card"><div class="section-heading"><div><span class="small-label">SOURCE NOTES</span><h2 id="selected-title">原帖与时间线</h2></div><div class="language-switch" aria-label="原帖语言"><button id="language-zh" aria-pressed="true">中文</button><button id="language-en" aria-pressed="false">原文</button></div></div><div id="selected-summary" class="selected-summary"></div><div id="posts" class="posts" aria-live="polite"><div class="empty-state">正在读取 Tibo 的公开动态…</div></div></div>
+    </section>
+    <footer class="page-footer"><div>原帖来源 Tibo / X</div><span id="freshness">正在连接数据源</span></footer>
+  </main>
+</body>
+</html>
