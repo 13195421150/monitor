@@ -1,0 +1,10 @@
+services:
+  monitor:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4318:4318"
+    volumes:
+      - monitor-data:/data
+volumes:
+  monitor-data:
